@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: My_deployment
+  name: my-deployment
   labels:
-   app: My_app
+   app: my-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: My_app
+      app: my-app
   template:
     metadata:
       labels:
-        app: My_app
+        app: my-app
     spec:
       containers:
-      - name: My_container
+      - name: my-container
         image: ghcr.io/mahi-oops/booking-app:52107
         ports: 
          - containerPort: 8080
