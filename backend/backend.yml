@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+ name: backend-deployment
+ labels:
+  app: backend
+spec:
+  replicas: 3
+  
+  selectors:
+   matchlabels:
+    app: backend
+  template:
+    metadata:
+     labels:
+      app: backend
+    spec:
+     containers:
+     - name: backend-container
+       image: avulamahesh/booking:latest
+       ports:
+       - containerPort: 3000
+
