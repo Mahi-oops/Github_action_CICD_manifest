@@ -17,7 +17,7 @@ spec:
     spec:
      containers:
      - name: backend-container
-       image: avulamahesh/booking:latest
+       image: ghcr.io/mahi-oops/backend-app:95
        ports:
        - containerPort: 3000
 
