@@ -1,5 +1,5 @@
-apiVersin: v1
-kind: service
+apiVersion: v1
+kind: Service
 metadata:
  name: backend-service
 spec:
