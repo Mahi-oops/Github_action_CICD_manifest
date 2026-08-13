@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
  name: backend-deployment
@@ -17,7 +17,7 @@ spec:
     spec:
      containers:
      - name: backend-container
-       image: ghcr.io/mahi-oops/backend-app:96
+       image: ghcr.io/mahi-oops/backend-app:97
        ports:
        - containerPort: 3000
 
