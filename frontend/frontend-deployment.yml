@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: ghcr.io/mahi-oops/booking-app:98
+        image: ghcr.io/mahi-oops/booking-app:101
         ports: 
          - containerPort: 80
