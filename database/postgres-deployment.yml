@@ -9,8 +9,9 @@ spec:
   replicas: 1
   selector:
    matchLabels:
-    app: postgres
-   template:
+    labels:
+     app: postgres
+  template:
     metadata:
      labels: 
       app: postgres
