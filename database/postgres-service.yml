@@ -3,7 +3,7 @@ kind: Service
 metadata:
  name: postgres-service
  namespace: my-app
- spec:
+spec:
   selector:
    app: postgres
   ports:
