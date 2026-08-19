@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: backend-container
-          image: ghcr.io/mahi-oops/backend-app:103
+          image: ghcr.io/mahi-oops/backend-app:107
 
           ports:
             - containerPort: 3000
