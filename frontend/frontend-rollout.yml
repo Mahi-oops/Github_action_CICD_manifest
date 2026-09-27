@@ -29,4 +29,4 @@ spec:
     blueGreen:
       activeService: frontend-service
       previewService: frontend-preview
-      autoPromotionEnabled: false
+      autoPromotionEnabled: true
