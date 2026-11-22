@@ -8,8 +8,6 @@ metadata:
 
 spec:
   replicas: 2
-  nodeSelector:
-    kubernates.io/hostname: minikube-m02
 
   selector:
     matchLabels:
@@ -21,6 +19,9 @@ spec:
         app: my-app
 
     spec:
+      nodeSelector:
+        kubernates.io/hostname: minikube-m02
+        
       containers:
         - name: my-container
           image: ghcr.io/mahi-oops/booking-app:113
