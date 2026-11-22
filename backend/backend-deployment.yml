@@ -9,6 +9,8 @@ metadata:
 
 spec:
   replicas: 3
+  nodeSelector:
+    kubernates.io/hostname: minikube-m02
 
   selector:
     matchLabels:
